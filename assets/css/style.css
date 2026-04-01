@@ -433,30 +433,24 @@ ul {
    ========================================================================== */
 .about-content {
     display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-start;
 }
 
 @media(min-width: 900px) {
     .about-content {
-        flex-direction: row;
+        gap: 50px;
         align-items: center;
     }
 }
 
 /* Flip Card 3D */
 .flip-card-container {
-    width: 503px;
-    height: 799px;
+    width: 300px;
+    height: 476px;
     perspective: 1000px;
-}
-
-@media (max-width: 768px) {
-    .flip-card-container {
-        width: 280px;
-        height: 445px; /* Mantém a proporção exata para não esticar a imagem */
-    }
+    flex-shrink: 0;
 }
 
 .flip-card {
@@ -566,6 +560,56 @@ ul {
 
 .about-text strong {
     color: var(--color-text);
+}
+
+/* Regras Responsivas para o Celular (Sobre Mim) */
+@media (max-width: 768px) {
+    .flip-card-container {
+        width: 130px; /* Reduz a largura para sobrar espaço para o texto ao lado */
+        height: 206px; /* Matém proporção */
+    }
+    
+    .flip-card-back {
+        padding: 5px; /* Reduz padding absurdo para cartas pequenas */
+    }
+    
+    .flip-card-back h3 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    
+    .flip-card-back p {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    
+    .flip-card-back i {
+        margin-right: 5px;
+    }
+    
+    .mini-skills {
+        margin-top: 5px;
+        gap: 5px;
+    }
+    
+    .mini-skills span {
+        font-size: 0.65rem;
+        padding: 3px 5px;
+    }
+    
+    /* Ajusta tamanho do texto à direita para não empilhar ou gerar rolagem */
+    .about-text p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+    
+    .about-text .btn {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* ==========================================================================
