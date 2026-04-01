@@ -157,3 +157,13 @@ if (contactForm) {
         this.reset();
     });
 }
+
+/* ==========================================
+   FLIP CARD CLICK PARA MOBILE
+   ========================================== */
+const flipCardContainer = document.querySelector('.flip-card-container');
+if (flipCardContainer) {
+    flipCardContainer.addEventListener('click', function() {
+        this.classList.toggle('flipped');
+    });
+}
