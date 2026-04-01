@@ -564,6 +564,23 @@ ul {
 
 /* Regras Responsivas para o Celular (Sobre Mim) */
 @media (max-width: 768px) {
+    .flip-hint {
+        font-size: 0; /* Esconde o texto no celular */
+        padding: 5px;
+        bottom: 5px;
+        border-radius: 50%; /* Faz virar um pequeno botão circular */
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .flip-hint i {
+        font-size: 0.9rem; /* Mantém apenas o ícone visível */
+        margin: 0; /* Remove qualquer margem que possa descentralizar */
+    }
+
     .flip-card-container {
         width: 130px; /* Reduz a largura para sobrar espaço para o texto ao lado */
         height: 206px; /* Matém proporção */
