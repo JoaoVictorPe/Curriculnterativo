@@ -452,6 +452,13 @@ ul {
     perspective: 1000px;
 }
 
+@media (max-width: 768px) {
+    .flip-card-container {
+        width: 280px;
+        height: 445px; /* Mantém a proporção exata para não esticar a imagem */
+    }
+}
+
 .flip-card {
     width: 100%;
     height: 100%;
