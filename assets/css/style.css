@@ -305,6 +305,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
+    align-items: start;
 }
 
 @media(min-width: 900px) {
@@ -404,7 +405,6 @@ ul {
 /* Projetos Secundários */
 .secondary-projects {
     display: grid;
-    grid-template-rows: 1fr 1fr;
     gap: 40px;
 }
 
